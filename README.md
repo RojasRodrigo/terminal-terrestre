@@ -70,8 +70,7 @@ docker-compose up --build
 
 # 3. Acceder
 #    Web:  http://localhost:5173
-#    API:  http://localhost:4000/api
-#    DB:   localhost:5432
+#    DB:   localhost:8080
 ```
 
 ## Endpoints de la API
@@ -119,21 +118,4 @@ Eventos recibidos:
 - Ordenamiento en PostgreSQL con índices sobre estado y hora
 - Actualización en tiempo real vía WebSocket broadcast
 
-## Variables de entorno
 
-### Backend (.env)
-```
-PORT=4000
-DB_HOST=postgres
-DB_PORT=5432
-DB_NAME=terminal_terrestre
-DB_USER=terminal_user
-DB_PASSWORD=terminal_pass
-JWT_SECRET=cambiar_en_produccion
-```
-
-### Frontend (.env)
-```
-VITE_API_URL=http://localhost:4000/api
-VITE_WS_URL=ws://localhost:4000/ws
-```
