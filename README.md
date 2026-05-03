@@ -69,7 +69,7 @@ cd terminal-terrestre
 docker-compose up --build
 
 # 3. Acceder
-#    Web:  http://localhost (nginx) o http://localhost:5173
+#    Web:  http://localhost:5173
 #    API:  http://localhost:4000/api
 #    DB:   localhost:5432
 ```
